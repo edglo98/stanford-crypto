@@ -1,9 +1,3 @@
-
-// function prueba () {
-//     let valor = document.getElementById("stuff").value = "hola";
-//     return console.log(valor.value)
-// }
-
 var passwordField = document.getElementById("password"),
   stuffField = document.getElementById("stuff"),
   encryptedField = document.getElementById("encrypted"),

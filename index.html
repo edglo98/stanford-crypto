@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://bitwiseshiftleft.github.com/sjcl/sjcl.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/styles.css" media="screen" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+        <title>Stanford Crypto</title>
+    </head>
+    <body>
+        <!-- <input type="button" name="prueba" value="prue" onclick="prueba()"> -->
+        <div class="container">
+            <h1>Stanford JavaScript Crypto</h1>
+            <form name="myform">
+                <div>
+                    <h4>
+                        Encrypt password:
+                    </h4> 
+                    <input type="password" name="password" id="password"><br/>
+                </div>
+                
+                <div>
+                    <h4>
+                        Secret text:
+                    </h4>
+                    <textarea name="stuff" id="stuff" placeholder="Enter message here."></textarea>
+                    <input type="button" name="encrypt" value="Encrypt" onclick="handleEncrypt()">
+                </div>
+                
+                <div>
+                    <h4>
+                        Encrypted text:
+                    </h4>
+                    <textarea disabled id="encrypted"></textarea>
+                    <input type="button" name="decrypt" value="Decrypt" onclick="handleDecrypt()">
+                </div>
+
+                <div>
+                    <h4>
+                        Decrypted text:
+                    </h4>
+                    <textarea disabled id="decrypted"></textarea>
+                </div>
+                
+            </form>
+        </div>
+        <script type="text/javascript" src="/index.js"></script>
+</body>
+</html>
